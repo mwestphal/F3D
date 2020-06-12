@@ -48,7 +48,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://kitware.github.io/F3D/docs/logo.png">
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/04-f3d.png">
-<meta property="og:updated_time" content="2020-06-05T12:11:00.390Z">
+<meta property="og:updated_time" content="2020-06-12T09:16:43.998Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="F3D">
 <meta name="twitter:description" content="F3D - Fast and minimalist 3D viewerBy Kitware SAS, 2019 F3D (pronounced /fɛd/) is a VTK-based 3D viewer following the KISS principle, so it is minimalist, efficient, has no GUI, has simple interactio">
@@ -134,55 +134,55 @@
 </thead>
 <tbody>
 <tr>
-<td>–input=&lt;file&gt;</td>
+<td>--input=&lt;file&gt;</td>
 <td>The <em>input</em> file or files to read, can also be provided as a positional argument.</td>
 </tr>
 <tr>
-<td>–output=&lt;png file&gt;</td>
+<td>--output=&lt;png file&gt;</td>
 <td>Instead of showing a render view and render into it, <em>render directly into a png file</em>.</td>
 </tr>
 <tr>
-<td>–no-background</td>
+<td>--no-background</td>
 <td>Output file is saved with a transparent background.</td>
 </tr>
 <tr>
-<td>-h, –help</td>
+<td>-h, --help</td>
 <td>Print <em>help</em>.</td>
 </tr>
 <tr>
-<td>–verbose</td>
+<td>--verbose</td>
 <td>Enable <em>verbose</em> mode.</td>
 </tr>
 <tr>
-<td>–no-render</td>
+<td>--no-render</td>
 <td>Verbose mode without any rendering for the first provided file, to recover information about a file.</td>
 </tr>
 <tr>
-<td>–version</td>
+<td>--version</td>
 <td>Show <em>version</em> information.</td>
 </tr>
 <tr>
-<td>-x, –axis</td>
+<td>-x, --axis</td>
 <td>Show <em>axes</em> as a trihedron in the scene.</td>
 </tr>
 <tr>
-<td>-g, –grid</td>
+<td>-g, --grid</td>
 <td>Show <em>a grid</em> aligned with the XZ plane.</td>
 </tr>
 <tr>
-<td>-e, –edges</td>
+<td>-e, --edges</td>
 <td>Show the <em>cell edges</em>.</td>
 </tr>
 <tr>
-<td>–progress</td>
+<td>--progress</td>
 <td>Show a <em>progress bar</em> when loading the file.</td>
 </tr>
 <tr>
-<td>–geometry-only</td>
+<td>--geometry-only</td>
 <td>For certain <strong>full scene</strong> file formats (gltf/glb and obj),<br>reads <em>only the geometry</em> from the file and use default scene construction instead.</td>
 </tr>
 <tr>
-<td>–dry-run</td>
+<td>--dry-run</td>
 <td>Do not read the configuration file but consider only the command line options</td>
 </tr>
 </tbody>
@@ -197,72 +197,72 @@
 </thead>
 <tbody>
 <tr>
-<td>-o, –point-sprites</td>
+<td>-o, --point-sprites</td>
 <td></td>
 <td>Show sphere <em>points sprites</em> instead of the geometry.</td>
 </tr>
 <tr>
-<td>–point-size</td>
+<td>--point-size</td>
 <td>10.0</td>
 <td>Set the <em>size</em> of points when showing vertices and point sprites.</td>
 </tr>
 <tr>
-<td>–line-width</td>
+<td>--line-width</td>
 <td>1.0</td>
 <td>Set the <em>width</em> of lines when showing edges.</td>
 </tr>
 <tr>
-<td>–color=&lt;R,G,B&gt;</td>
+<td>--color=&lt;R,G,B&gt;</td>
 <td>1.0, 1.0, 1.0</td>
 <td>Set a <em>color</em> on the geometry.<br>This only makes sense when using the default scene.</td>
 </tr>
 <tr>
-<td>–opacity=&lt;opacity&gt;</td>
+<td>--opacity=&lt;opacity&gt;</td>
 <td>1.0</td>
 <td>Set <em>opacity</em> on the geometry.<br>This only makes sense when using the default scene. Usually used with Depth Peeling option.</td>
 </tr>
 <tr>
-<td>–roughness=&lt;roughness&gt;</td>
+<td>--roughness=&lt;roughness&gt;</td>
 <td>0.3</td>
 <td>Set the <em>roughness coefficient</em> on the geometry (0.0-1.0).<br>This only makes sense when using the default scene.</td>
 </tr>
 <tr>
-<td>–metallic=&lt;metallic&gt;</td>
+<td>--metallic=&lt;metallic&gt;</td>
 <td>0.0</td>
 <td>Set the <em>metallic coefficient</em> on the geometry (0.0-1.0).<br>This only makes sense when using the default scene.</td>
 </tr>
 <tr>
-<td>–hrdi=&lt;file path&gt;</td>
+<td>--hrdi=&lt;file path&gt;</td>
 <td></td>
 <td>Set the <em>HDRI</em> image used to create the environment.<br>The environment act as a light source and is reflected on the material.<br>Valid file format are hdr, png, jpg, pnm, tiff, bmp.</td>
 </tr>
 <tr>
-<td>–texture-base-color=&lt;file path&gt;</td>
+<td>--texture-base-color=&lt;file path&gt;</td>
 <td></td>
 <td>Path to a texture file that sets the color of the object.</td>
 </tr>
 <tr>
-<td>–texture-material=&lt;file path&gt;</td>
+<td>--texture-material=&lt;file path&gt;</td>
 <td></td>
 <td>Path to a texture file that sets the Occlusion, Roughness and Metallic values of the object.</td>
 </tr>
 <tr>
-<td>–texture-emissive=&lt;file path&gt;</td>
+<td>--texture-emissive=&lt;file path&gt;</td>
 <td></td>
 <td>Path to a texture file that sets the emited light of the object.</td>
 </tr>
 <tr>
-<td>–emissive-factor=&lt;R,G,B&gt;</td>
+<td>--emissive-factor=&lt;R,G,B&gt;</td>
 <td>1.0, 1.0, 1.0</td>
 <td>Emissive factor. This value is multiplied with the emissive color when an emissive texture is present.</td>
 </tr>
 <tr>
-<td>–texture-normal=&lt;file path&gt;</td>
+<td>--texture-normal=&lt;file path&gt;</td>
 <td></td>
 <td>Path to a texture file that sets the normal map of the object.</td>
 </tr>
 <tr>
-<td>–normal-scale=&lt;normal_scale&gt;</td>
+<td>--normal-scale=&lt;normal_scale&gt;</td>
 <td>1.0</td>
 <td>Normal scale affects the strength of the normal deviation from the normal texture.</td>
 </tr>
@@ -277,19 +277,19 @@
 </thead>
 <tbody>
 <tr>
-<td>-p, –depth-peeling</td>
+<td>-p, --depth-peeling</td>
 <td>Enable <em>depth peeling</em>. This is a technique used to correctly render translucent objects.</td>
 </tr>
 <tr>
-<td>-q, –ssao</td>
+<td>-q, --ssao</td>
 <td>Enable <em>Screen-Space Ambient Occlusion</em>. This is a technique used to improve the depth perception of the object.</td>
 </tr>
 <tr>
-<td>-a, –fxaa</td>
+<td>-a, --fxaa</td>
 <td>Enable <em>Fast Approximate Anti-Aliasing</em>. This technique is used to reduce aliasing.</td>
 </tr>
 <tr>
-<td>-t, –tone-mapping</td>
+<td>-t, --tone-mapping</td>
 <td>Enable generic filmic <em>Tone Mapping Pass</em>. This technique is used to map colors properly to the monitor colors.</td>
 </tr>
 </tbody>
@@ -303,19 +303,19 @@
 </thead>
 <tbody>
 <tr>
-<td>–camera-position=&lt;X,Y,Z&gt;</td>
+<td>--camera-position=&lt;X,Y,Z&gt;</td>
 <td>The position of the camera. Automaticaly computed or recovered from the file if not provided.</td>
 </tr>
 <tr>
-<td>–camera-focal-point=&lt;X,Y,Z&gt;</td>
+<td>--camera-focal-point=&lt;X,Y,Z&gt;</td>
 <td>The focal point of the camera. Automaticaly computed or recovered from the file if not provided.</td>
 </tr>
 <tr>
-<td>–camera-view-up=&lt;X,Y,Z&gt;</td>
+<td>--camera-view-up=&lt;X,Y,Z&gt;</td>
 <td>The focal point of the camera. Will be orthogonalized even when provided. Automaticaly computed or recovered from the file if not provided.</td>
 </tr>
 <tr>
-<td>–camera-view-angle=&lt;angle&gt;</td>
+<td>--camera-view-angle=&lt;angle&gt;</td>
 <td>The view angle of the camera, non-zero value in degrees. Automaticaly computed or recovered from the file if not provided.</td>
 </tr>
 </tbody>
@@ -330,17 +330,17 @@
 </thead>
 <tbody>
 <tr>
-<td>-r, –raytracing</td>
+<td>-r, --raytracing</td>
 <td></td>
 <td>Enable <em>OSPRay raytracing</em>. Requires OSPRay raytracing to be enabled in the linked VTK.</td>
 </tr>
 <tr>
-<td>–samples=&lt;samples&gt;</td>
+<td>--samples=&lt;samples&gt;</td>
 <td>5</td>
 <td>The number of <em>samples per pixel</em>. It only makes sense with raytracing enabled.</td>
 </tr>
 <tr>
-<td>-d, –denoise</td>
+<td>-d, --denoise</td>
 <td></td>
 <td><em>Denoise</em> the image. It only makes sense with raytracing enabled.</td>
 </tr>
@@ -356,42 +356,42 @@
 </thead>
 <tbody>
 <tr>
-<td>-s, –scalars=&lt;array_name&gt;</td>
+<td>-s, --scalars=&lt;array_name&gt;</td>
 <td></td>
 <td><em>Color by a specific scalar</em> array present in the file. If no array_name is provided, one will be picked if any are available. <br>This only makes sense when using the default scene.<br>Use verbose to recover the usable array names.</td>
 </tr>
 <tr>
-<td>–comp=&lt;comp_index&gt;</td>
+<td>--comp=&lt;comp_index&gt;</td>
 <td>-1</td>
 <td>Specify the <em>component from the scalar</em> array to color with.<br>Use with the scalar option. Any negative value means <em>magnitude</em>.</td>
 </tr>
 <tr>
-<td>-c, –cells</td>
+<td>-c, --cells</td>
 <td></td>
 <td>Specify that the scalar array is to be found <em>on the cells</em> instead of on the points.<br>Use with the scalar option.</td>
 </tr>
 <tr>
-<td>–range=&lt;min,max&gt;</td>
+<td>--range=&lt;min,max&gt;</td>
 <td></td>
 <td>Set a <em>custom range for the coloring</em> by the array.<br>Use with the scalar option.</td>
 </tr>
 <tr>
-<td>-b, –bar</td>
+<td>-b, --bar</td>
 <td></td>
 <td>Show <em>scalar bar</em> of the coloring by array.<br>Use with the scalar option.</td>
 </tr>
 <tr>
-<td>–colormap=&lt;color_list&gt;</td>
+<td>--colormap=&lt;color_list&gt;</td>
 <td></td>
 <td>Set a <em>custom colormap for the coloring</em>.<br>This is a list of colors in the format <code>val1,red1,green1,blue1,...,valN,redN,greenN,blueN</code><br>where all values are in the range (0,1).<br>Use with the scalar option.</td>
 </tr>
 <tr>
-<td>-v, –volume</td>
+<td>-v, --volume</td>
 <td></td>
 <td>Enable <em>volume rendering</em>. It is only available for 3D image data (vti, dcm, nrrd, mhd files) and will display nothing with other default scene formats.</td>
 </tr>
 <tr>
-<td>-i, –inverse</td>
+<td>-i, --inverse</td>
 <td></td>
 <td>Inverse the linear opacity function. Only makes sense with volume rendering.</td>
 </tr>
@@ -406,11 +406,11 @@
 </thead>
 <tbody>
 <tr>
-<td>–ref=&lt;png file&gt;</td>
+<td>--ref=&lt;png file&gt;</td>
 <td>Reference <em>image to compare with</em> for testing purposes.</td>
 </tr>
 <tr>
-<td>–ref-threshold=&lt;threshold&gt;</td>
+<td>--ref-threshold=&lt;threshold&gt;</td>
 <td><em>Testing threshold</em> to trigger a test failure or success.</td>
 </tr>
 </tbody>
@@ -425,37 +425,37 @@
 </thead>
 <tbody>
 <tr>
-<td>–bg-color=&lt;R,G,B&gt;</td>
+<td>--bg-color=&lt;R,G,B&gt;</td>
 <td>0.2, 0.2, 0.2</td>
 <td>Set the window <em>background color</em>.<br>Ignored if <em>hdri</em> is set.</td>
 </tr>
 <tr>
-<td>–resolution=&lt;width,height&gt;</td>
+<td>--resolution=&lt;width,height&gt;</td>
 <td>1000, 600</td>
 <td>Set the <em>window resolution</em>.</td>
 </tr>
 <tr>
-<td>-z, –fps</td>
+<td>-z, --fps</td>
 <td></td>
 <td>Display a <em>frame per second counter</em>.</td>
 </tr>
 <tr>
-<td>-n, –filename</td>
+<td>-n, --filename</td>
 <td></td>
 <td>Display the <em>name of the file</em>.</td>
 </tr>
 <tr>
-<td>-m, –metadata</td>
+<td>-m, --metadata</td>
 <td></td>
 <td>Display the <em>metadata</em>.<br>This only makes sense when using the default scene.</td>
 </tr>
 <tr>
-<td>-f, –fullscreen</td>
+<td>-f, --fullscreen</td>
 <td></td>
 <td>Display in fullscreen.</td>
 </tr>
 <tr>
-<td>-u, –blur-background</td>
+<td>-u, --blur-background</td>
 <td></td>
 <td>Blur background.<br>This only makes sense when using a HDRI.</td>
 </tr>
@@ -510,7 +510,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2020-06-05T12:11:00.390Z" itemprop="dateModified">Last updated: 2020-06-05</time>
+                <time class="article-footer-updated" datetime="2020-06-12T09:16:43.998Z" itemprop="dateModified">Last updated: 2020-06-12</time>
                 <a href="installation_and_build.html" class="article-footer-next" title="Installation and build"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
