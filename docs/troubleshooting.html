@@ -39,17 +39,17 @@
   <!-- RSS -->
   <link rel="alternate" href="/F3D/atom.xml" title="F3D">
   <!-- Open Graph -->
-  <meta name="description" content="Windows I have installed F3D using the provided installer but when launched, I have an error with unfound DLL libraries.  You need to install Visual C++ Redistributable for Visual Studio 2015, select">
+  <meta name="description" content="Windows I use F3D in a VM, the application fails to launch  OpenGL applications like F3D can have issues when launched from a guest Windows because the access to the GPU is restricted.You can try to u">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Troubleshooting">
 <meta property="og:url" content="https://kitware.github.io/F3D/docs/troubleshooting.html">
 <meta property="og:site_name" content="F3D">
-<meta property="og:description" content="Windows I have installed F3D using the provided installer but when launched, I have an error with unfound DLL libraries.  You need to install Visual C++ Redistributable for Visual Studio 2015, select">
+<meta property="og:description" content="Windows I use F3D in a VM, the application fails to launch  OpenGL applications like F3D can have issues when launched from a guest Windows because the access to the GPU is restricted.You can try to u">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-06-05T12:11:00.390Z">
+<meta property="og:updated_time" content="2020-12-19T16:44:49.044Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Troubleshooting">
-<meta name="twitter:description" content="Windows I have installed F3D using the provided installer but when launched, I have an error with unfound DLL libraries.  You need to install Visual C++ Redistributable for Visual Studio 2015, select">
+<meta name="twitter:description" content="Windows I use F3D in a VM, the application fails to launch  OpenGL applications like F3D can have issues when launched from a guest Windows because the access to the GPU is restricted.You can try to u">
   <!-- Google Analytics -->
   
 <script>
@@ -101,13 +101,9 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h2 id="Windows" class="article-heading"><a href="#Windows" class="headerlink" title="Windows"></a>Windows<a class="article-anchor" href="#Windows" aria-hidden="true"></a></h2><blockquote>
-<p>I have installed F3D using the provided installer but when launched, I have an error with unfound DLL libraries.</p>
-</blockquote>
-<p>You need to install <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145" target="_blank" rel="noopener">Visual C++ Redistributable for Visual Studio 2015</a>, select the <code>x64</code> version.</p>
-<blockquote>
 <p>I use F3D in a VM, the application fails to launch</p>
 </blockquote>
-<p>OpenGL applications like F3D can have issues when launched from a guest Windows because the access to the GPU is restricted.\<br>You can try to use a software implementation of OpenGL, called <a href="https://github.com/pal1000/mesa-dist-win/releases" target="_blank" rel="noopener">Mesa</a>.\</p>
+<p>OpenGL applications like F3D can have issues when launched from a guest Windows because the access to the GPU is restricted.<br>You can try to use a software implementation of OpenGL, called <a href="https://github.com/pal1000/mesa-dist-win/releases" target="_blank" rel="noopener">Mesa</a>.</p>
 <ul>
 <li>Download the lastest <code>release-msvc</code></li>
 <li>copy <code>x64/OpenGL32.dll</code> and <code>x64/libglapi.dll</code> in the same folder as <code>f3d.exe</code>.</li>
@@ -117,7 +113,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2020-06-05T12:11:00.390Z" itemprop="dateModified">Last updated: 2020-06-05</time>
+                <time class="article-footer-updated" datetime="2020-12-19T16:44:49.044Z" itemprop="dateModified">Last updated: 2020-12-19</time>
                 <a href="limitations.html" class="article-footer-prev" title="Limitations"><i class="fa fa-chevron-left"></i><span>Prev</span></a>
               </footer>
               

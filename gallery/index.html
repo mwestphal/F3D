@@ -39,13 +39,14 @@
   <!-- RSS -->
   <link rel="alternate" href="/F3D/atom.xml" title="F3D">
   <!-- Open Graph -->
-  <meta name="description" content="Images displayed below use public datasets, you can download them here.    div.gallery {       margin: 5px;       display: inline-block;       width: 300px;   }    div.gallery img {       width: 100%;">
+  <meta name="description" content="Images and videos displayed below use public datasets, you can download them here.    div.gallery {       margin: 5px;       display: inline-block;       width: 300px;   }    div.gallery img {       w">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gallery">
 <meta property="og:url" content="https://kitware.github.io/F3D/gallery/index.html">
 <meta property="og:site_name" content="F3D">
-<meta property="og:description" content="Images displayed below use public datasets, you can download them here.    div.gallery {       margin: 5px;       display: inline-block;       width: 300px;   }    div.gallery img {       width: 100%;">
+<meta property="og:description" content="Images and videos displayed below use public datasets, you can download them here.    div.gallery {       margin: 5px;       display: inline-block;       width: 300px;   }    div.gallery img {       w">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://kitware.github.io/F3D/gallery/directScalars.png">
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/01-f3d.png">
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/02-f3d.png">
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/03-f3d.png">
@@ -54,11 +55,12 @@
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/06-f3d.png">
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/07-f3d.png">
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/08-f3d.png">
-<meta property="og:updated_time" content="2020-06-12T09:16:44.008Z">
+<meta property="og:image" content="https://kitware.github.io/F3D/gallery/dota.gif">
+<meta property="og:updated_time" content="2020-12-19T16:44:49.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gallery">
-<meta name="twitter:description" content="Images displayed below use public datasets, you can download them here.    div.gallery {       margin: 5px;       display: inline-block;       width: 300px;   }    div.gallery img {       width: 100%;">
-<meta name="twitter:image" content="https://kitware.github.io/F3D/gallery/01-f3d.png">
+<meta name="twitter:description" content="Images and videos displayed below use public datasets, you can download them here.    div.gallery {       margin: 5px;       display: inline-block;       width: 300px;   }    div.gallery img {       w">
+<meta name="twitter:image" content="https://kitware.github.io/F3D/gallery/directScalars.png">
   <!-- Google Analytics -->
   
 <script>
@@ -109,7 +111,7 @@
                 <h1 class="article-title" itemprop="name">Gallery</h1>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>Images displayed below use public datasets, you can download them <a href="https://drive.google.com/uc?export=download&amp;id=1BVoJsyvdVIPqhUj9u5Ap9-glPLeQ_0gF" target="_blank" rel="noopener">here</a>.</p>
+                <p>Images and videos displayed below use public datasets, you can download them <a href="https://drive.google.com/uc?export=download&amp;id=1BVoJsyvdVIPqhUj9u5Ap9-glPLeQ_0gF" target="_blank" rel="noopener">here</a>.</p>
 <style>
   div.gallery {
       margin: 5px;
@@ -136,6 +138,14 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
+<div class="gallery"><br>    <a data-fancybox="gallery" href="gearbox.webm"><video autoplay loop src="gearbox.webm" type="video/webm"></video></a><br>    <div class="desc">Animated realistic rendering<br>      <span class="code">f3d gearbox/scene.gltf --hdri=future_parking_2k.hdr -uqxtgas</span><br>    </div><br></div>
+
+<div class="gallery"><br>    <a data-fancybox="gallery" href="dota.webm"><video autoplay loop src="dota.webm" type="video/webm"></video></a><br>    <div class="desc">Animated, skinned and morphed rendering<br>      <span class="code">f3d dota/scene.gltf --hdri=future_parking_2k.hdr -uqxtgas</span><br>    </div><br></div>
+
+<div class="gallery"><br>    <a data-fancybox="gallery" href="can.webm"><video autoplay loop src="can.webm" type="video/webm"></video></a><br>    <div class="desc">Animated SciViz rendering<br>      <span class="code">f3d can.ex2 -xtgans –up=+Z –scalars=VEL</span><br>    </div><br></div>
+
+<div class="gallery"><br>    <a data-fancybox="gallery" href="directScalars.png"><img src="directScalars.png"></a><br>    <div class="desc">Direct scalars rendering of a point cloud<br>      <span class="code">f3d Carola_PointCloud.ply –point-size=0 –comp=-2 -so –verbose –up=+Z –hdri=venice_sunset_8k.hdr</span><br>    </div><br></div>
+
 <div class="gallery"><br>    <a data-fancybox="gallery" href="01-f3d.png"><img src="01-f3d.png"></a><br>    <div class="desc">Raytraced CAD assembly<br>      <span class="code">f3d 202.vtp -xtgans -rd --samples=10 --range=-2,9</span><br>    </div><br></div>
 
 <div class="gallery"><br>    <a data-fancybox="gallery" href="02-f3d.png"><img src="02-f3d.png"></a><br>    <div class="desc">Volume rendering of a security bag scan<br>      <span class="code">f3d backpack.vti -vmn --range=300,1000 <br>--colormap=0,0,0,0,1,1,1,1</span><br>    </div><br></div>
@@ -152,9 +162,17 @@
 
 <div class="gallery"><br>    <a data-fancybox="gallery" href="08-f3d.png"><img src="08-f3d.png"></a><br>    <div class="desc">Point cloud rendering using sprites<br>      <span class="code">f3d pointCloud.vtp -o <br>--point-size=0.2 --colormap=<br>0,0,0.8,0,0.4,0.9,0,0,0.8,0.9,0.9,0,1,0.5,0.5,1</span><br>    </div><br></div>
 
+<p>Bristleback DOTA Fan-Art by Nikolay_Tsys<br><a href="https://sketchfab.com/Tolst" target="_blank" rel="noopener">https://sketchfab.com/Tolst</a></p>
+<p>SY Carola (point cloud) by Scottish Maritime Museum<br><a href="https://sketchfab.com/ScottishMaritimeMuseum" target="_blank" rel="noopener">https://sketchfab.com/ScottishMaritimeMuseum</a></p>
+<p>Gearbox Animation by DZHUSI ØNE<br><a href="https://sketchfab.com/dzhusione" target="_blank" rel="noopener">https://sketchfab.com/dzhusione</a></p>
+<p>Venice Sunset HDRI by Greg Zaal<br><a href="https://hdrihaven.com/hdris/?a=Greg%20Zaal" target="_blank" rel="noopener">https://hdrihaven.com/hdris/?a=Greg%20Zaal</a></p>
+<p>Future Parking HDRI by Sergej Majboroda<br><a href="https://hdrihaven.com/hdris/?a=Sergej%20Majboroda" target="_blank" rel="noopener">https://hdrihaven.com/hdris/?a=Sergej%20Majboroda</a></p>
+<!-- hidden gif to be used by README.md -->
+<p hidden><img src="dota.gif"></p>
+
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2020-06-12T09:16:44.008Z" itemprop="dateModified">Last updated: 2020-06-12</time>
+                <time class="article-footer-updated" datetime="2020-12-19T16:44:49.058Z" itemprop="dateModified">Last updated: 2020-12-19</time>
                 
               </footer>
               

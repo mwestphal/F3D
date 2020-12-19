@@ -48,7 +48,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://kitware.github.io/F3D/docs/logo.png">
 <meta property="og:image" content="https://kitware.github.io/F3D/gallery/04-f3d.png">
-<meta property="og:updated_time" content="2020-06-12T09:16:43.998Z">
+<meta property="og:updated_time" content="2020-12-19T16:44:49.044Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="F3D">
 <meta name="twitter:description" content="F3D - Fast and minimalist 3D viewerBy Kitware SAS, 2019 F3D (pronounced /fɛd/) is a VTK-based 3D viewer following the KISS principle, so it is minimalist, efficient, has no GUI, has simple interactio">
@@ -117,6 +117,8 @@
 <li><strong>.dcm</strong> : DICOM file format</li>
 <li><strong>.nrrd/.nhrd</strong> : “nearly raw raster data” file format</li>
 <li><strong>.mhd/.mha</strong> : MetaHeader MetaIO file format</li>
+<li><strong>.tif/.tiff</strong> : TIFF 2D/3D file format</li>
+<li><strong>.ex2/.e/.exo/.g</strong> : Exodus 2 file format</li>
 <li><strong>.gml</strong> : CityGML file format</li>
 <li><strong>.pts</strong> : Point Cloud file format</li>
 <li><strong>.obj</strong> : Wavefront OBJ file format (full scene)</li>
@@ -174,12 +176,24 @@
 <td>Show the <em>cell edges</em>.</td>
 </tr>
 <tr>
+<td>-k, --trackball</td>
+<td>Enable trackball interaction.</td>
+</tr>
+<tr>
 <td>--progress</td>
 <td>Show a <em>progress bar</em> when loading the file.</td>
 </tr>
 <tr>
+<td>--animation-index</td>
+<td>Selection the animation to show.<br>Any negative value means all animations.<br>The default scene always has a single animation if any.</td>
+</tr>
+<tr>
 <td>--geometry-only</td>
 <td>For certain <strong>full scene</strong> file formats (gltf/glb and obj),<br>reads <em>only the geometry</em> from the file and use default scene construction instead.</td>
+</tr>
+<tr>
+<td>--up</td>
+<td>Define the Up direction (default: +Y)</td>
 </tr>
 <tr>
 <td>--dry-run</td>
@@ -363,7 +377,7 @@
 <tr>
 <td>--comp=&lt;comp_index&gt;</td>
 <td>-1</td>
-<td>Specify the <em>component from the scalar</em> array to color with.<br>Use with the scalar option. Any negative value means <em>magnitude</em>.</td>
+<td>Specify the <em>component from the scalar</em> array to color with.<br>Use with the scalar option. -1 means <em>magnitude</em>. -2 means <em>direct values</em>.<br>When using <em>direct values</em>, components are used as L, LA, RGB, RGBA values depending on the number of components.</td>
 </tr>
 <tr>
 <td>-c, --cells</td>
@@ -497,6 +511,7 @@
 <li>Press <code>O</code> key to toggle point sprites rendering.</li>
 <li>Press <code>F</code> key to toggle full screen.</li>
 <li>Press <code>U</code> key to toggle background blur.</li>
+<li>Press <code>K</code> key to toggle trackball interaction mode.</li>
 </ul>
 <p>Other interactions are available:</p>
 <ul>
@@ -504,13 +519,15 @@
 <li>Press <code>?</code> key to dump camera state to the terminal.</li>
 <li>Press <code>ESC</code> key to close the window and quit F3D.</li>
 <li>Press <code>ENTER</code> key to reset the camera to its inital parameters.</li>
-<li>Press <code>LEFT</code> to load the previous file if any</li>
-<li>Press <code>RIGHT</code> to load the next file if any</li>
+<li>Press <code>SPACE</code> to play the animation if any.</li>
+<li>Press <code>LEFT</code> to load the previous file if any.</li>
+<li>Press <code>RIGHT</code> to load the next file if any.</li>
+<li>Press <code>UP</code> to reload the current file.</li>
 </ul>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2020-06-12T09:16:43.998Z" itemprop="dateModified">Last updated: 2020-06-12</time>
+                <time class="article-footer-updated" datetime="2020-12-19T16:44:49.044Z" itemprop="dateModified">Last updated: 2020-12-19</time>
                 <a href="installation_and_build.html" class="article-footer-next" title="Installation and build"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
